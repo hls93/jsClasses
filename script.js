@@ -136,7 +136,7 @@ console.log(mazda3);
 // Print calling massBuild(), building 35000 cars.
 // It should print: "Building 35000 Red Touring Mazda3's."
 // Write your code below:
-
+console.log(mazda3.massBuild(35000));
 
 
 
@@ -144,7 +144,7 @@ console.log(mazda3);
 // Print, calling customerBuild(), building one yellow mazda3 with the following options, as an array: weather package, satellite radio, rear spoiler.
 // It should read: "Building one yellow Touring Mazda3 with the following options: weather package, satellite radio, rear spoiler"
 // Write your code below:
-
+console.log(mazda3.customerBuild("yellow", ["weather package", "satellite radio", "rear spoiler"]));
 
 
 
@@ -155,7 +155,7 @@ console.log(mazda3);
 
 // Write your 'miataRf' instance below:
 // Write your code below:
-
+let miataRf = new Sport("Miata-RF", "Grand Touring", "manual", "hard top", "red", "leather", "premium", "premium");
 
 
 
@@ -163,14 +163,14 @@ console.log(mazda3);
 // Print miataRf. It should have all of the above properties. Plus, the extended warranty.
 // Write your code below:
 
-
+console.log(miataRf);
 
 
 
 // Print miataRf, calling massBuild(), building 15,000
 // It should print: "Building 15000 Red Grand Touring Miata-RF's."
 // Write your code below:
-
+console.log(miataRf.massBuild(15000));
 
 
 
@@ -179,7 +179,7 @@ console.log(mazda3);
 // It should read: "Building one black Grand Touring Miata-RF with the following options: hid headlights, sports suspension, leather steering wheel, heated seats, adaptive cruise control"
 // Write your code below:
 
-
+console.log(miataRf.customerBuild("black", ["hid headlights", "sports suspension", "leather steering wheel", "heated seats", "adaptive cruise control"]));
 
 
 // TRAIL BLAZER MASS PRODUCTION
@@ -188,7 +188,7 @@ console.log(mazda3);
 
 // Write your 'trailBlazer' instance below:
 // Write your code below:
-
+let trailBlazer = new Truck("Trail Blazer", "blue", "Sport", 8, true, "standard", true, 2);
 
 
 
@@ -196,17 +196,18 @@ console.log(mazda3);
 // Print trailBlazer. It should have all the above properties. Plus, the extended warranty.
 // Write your code below:
 
-
+console.log(trailBlazer);
 
 
 // Print trailBlazer, calling massBuid(). It should build 35000 trucks.
 // It should print: "Building 35000 blue Sport Trail Blazer's."
 // Wrint your code below:
 
-
+console.log(trailBlazer.massBuild(35000));
 
 
 
 // Print trailBlazer, calling customerBuild(). It should build a red Trail Blazer with the following options, as an array: seat warmers, tinted windows, fog lamps.
 // It should print: "Building one red Sport Trail Blazer with the following options: seat warmers, tinted windows, fog lamps"
 // Write your code below:
+console.log(trailBlazer.customerBuild("red", ["seat warmers", "tinted windows", "fog lamps"]));
