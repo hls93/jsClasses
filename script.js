@@ -21,7 +21,7 @@ class Factory {
     this.location = "USA";
     this.airbags = true;
     this.abs = true;
-    this.warranty = "60,000 miles" || "3 years";
+    this.warranty = "60,000 miles/ 3 years";
 
     this.massBuild = function(quanity, options){
       return "Building ${quanity} ${this.color} ${this.trim} ${this.model}'s"
@@ -30,7 +30,7 @@ class Factory {
     this.customerBuild = function(color, options){
       return "Building one ${color} ${this.trim} ${this.model} with the following options: ${options}"
     };
-  
+
   }
 }
 
@@ -42,7 +42,25 @@ class Factory {
 // It should specifically inherit the warranty property from Factory so we can modify it.
 // Car should also have the following additional properties: enginesize (4), navigation (true), backupcamera (true), warranty (100,000 miles / 5 years)
 // Write your code below:
-
+class Car extends Factory{
+  constructor(model, doors, color, enginetype, transmission, trim, wheelstrim, audio, seatstrim, moonroof){
+    this.model = model;
+    this.doors = doors;
+    this.color = color;
+    this.enginetype = enginetype;
+    this.transmission = transmission;
+    this.trim = trim;
+    this.wheelstrim = wheelstrim;
+    this.audio = audio;
+    this.seatstrim = seatstrim;
+    this.moonroof = moonroof;
+    super({warranty});
+    this.enginesize = 4;
+    this.navigation = true;
+    this.backupcamera = true;
+    this.warranty = "100,000 miles/ 5 years"
+  }
+}
 
 
 
