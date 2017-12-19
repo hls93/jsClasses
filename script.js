@@ -97,7 +97,23 @@ class Sport extends Car {
 // Truck should also have the following properties, standard: backupcamera (true), audio (basic)
 // It should also inherit the warranty property so we can extend it to: 150,000 miles / 6 years.
 // Write your code below:
+class Truck extends Factory{
+  constructor(model, color, enginesize, hitch, bed, navigation){
+    this.model = model;
+    this.color = color;
+    this.enginesize = enginesize;
+    this.hitch = hitch;
+    this.bed = bed;
+    this.navigation = navigation;
 
+    super();
+    this.backupcamera = true;
+    this.audio = "basic";
+
+    this.warranty = "150,000 miles / 6 years";
+
+  }
+}
 
 
 
@@ -108,11 +124,11 @@ class Sport extends Car {
 // The following properties must be specified: model (mazda3), color (red), enginetype (hybrid), transmission (automatic), trim (touring), wheels (base), audio (premium), seats (leather), and moonroof (true)
 
 // Write your 'mazda3' instance below:
-
+let mazda3 = new Car("mazda3", 2, "red", "hybrid", "automatic", "touring", "base", "premium", "leather", true);
 
 // Print mazda3. I should have all the above properties.
 // Write your code below:
-
+console.log(mazda3);
 
 
 
