@@ -23,6 +23,14 @@ class Factory {
     this.abs = true;
     this.warranty = "60,000 miles" || "3 years";
 
+    this.massBuild = function(quanity, options){
+      return "Building ${quanity} ${this.color} ${this.trim} ${this.model}'s"
+    };
+
+    this.customerBuild = function(color, options){
+      return "Building one ${color} ${this.trim} ${this.model} with the following options: ${options}"
+    };
+  
   }
 }
 
